@@ -1,9 +1,9 @@
-@use 'blocks/cursor-game/cursor-game';
 @use 'blocks/game-window/game-window';
 @use 'blocks/button/button';
-@use 'blocks/click-game/click-game';
 @use 'blocks/scroll/scroll';
 @use 'blocks/frogger-like/frogger-like';
+@use 'blocks/nav/nav';
+@use 'blocks/universal/universal';
 
 /*
 @keyframes slideOut {
@@ -107,6 +107,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1200px;
     margin: auto;
+    margin-top: 25px;
   }
 }
 

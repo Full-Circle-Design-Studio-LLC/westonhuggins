@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<title>Games</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="../style.css">
-<body>
+
+<?php include('component-head.php'); ?>
 
 <ul class="index-list">
     <li class="index-li"><a class="index-link" href="maze.html"><span>Maze Game</span></a></li>

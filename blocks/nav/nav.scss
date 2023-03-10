@@ -1,0 +1,15 @@
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: lightcoral;
+    padding: 0 15px;
+}
+.nav__item {
+    color: white;
+    font-size: 24px;
+}

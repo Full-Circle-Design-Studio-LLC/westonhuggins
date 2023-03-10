@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<title>Design Lab Home</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<body>
+<?php $pageTitle = 'Design Lab Home'; ?>
+<?php include('component-head.php'); ?>
 
 <ul class="index-list">
-  <li class="index-li"><a class="index-link" href="page-group games/games.html"><span>Games</span></a></li>
+  <li class="index-li"><a class="index-link" href="games.php"><span>Games</span></a></li>
   <li class="index-li"><a class="index-link" href="scroll-pages.html"><span>Scroll Pages</span></a></li>
   <li class="index-li"><a class="index-link" href="canvas.html"><span>Canvas</span></a></li>
   <li class="index-li"><a class="index-link" href="cronut.html"><span>Cronut Calendar</span></a></li>
