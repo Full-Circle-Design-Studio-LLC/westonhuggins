@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Frogger-Inspired Game</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../style.css">
+<body>
+
+<div class="frogger-game-window">
+  <div class="frogger-grid">
+    <div class="frogger-square square-01 left-edge"></div>
+    <div class="frogger-square square-02"></div>
+    <div class="frogger-square square-03">
+      <img class="insect" src="../assets/fly.png">
+    </div>
+    <div class="frogger-square square-04"></div>
+    <div class="frogger-square square-05 right-edge"></div>
+    <div class="frogger-square square-06 left-edge"></div>
+    <div class="frogger-square square-07"></div>
+    <div class="frogger-square square-08"></div>
+    <div class="frogger-square square-09"></div>
+    <div class="frogger-square square-10 right-edge"></div>
+    <div class="frogger-square square-11 left-edge"></div>
+    <div class="frogger-square square-12"></div>
+    <div class="frogger-square square-13">
+      <div id="frog"></div>
+    </div>
+    <div class="frogger-square square-14"></div>
+    <div class="frogger-square square-15 right-edge"></div>
+    <div class="frogger-square square-16 left-edge"></div>
+    <div class="frogger-square square-17"></div>
+    <div class="frogger-square square-18"></div>
+    <div class="frogger-square square-19"></div>
+    <div class="frogger-square square-20 right-edge"></div>
+    <div class="frogger-square square-21 left-edge"></div>
+    <div class="frogger-square square-22"></div>
+    <div class="frogger-square square-23"></div>
+    <div class="frogger-square square-24"></div>
+    <div class="frogger-square square-25"></div>
+  </div>
+  <div class="frogger-score">0</div>
+  <div class="frogger-menu frogger-menu_start">
+    <h1>Bug Catch</h1>
+    <h3>Instructions: Use the arrow keys to catch as many bugs as possible.</h3>
+    <button class="frogger-start-button" onclick="startGame()">START</button>
+  </div>
+  <div class="frogger-menu frogger-menu_end">
+    <h1>Finish!</h1>
+    <h2 class="frogger-final-score"></h2>
+  </div>
+</div>
+
+
+</body>
+
+<audio id="sound-pop" src="../assets/audio/Pop.m4a"></audio>
+<audio id="sound-move" src="../assets/audio/Move.m4a"></audio>
+
+</html>
+<script src="../blocks/frogger-like/frogger-like.js"></script>
