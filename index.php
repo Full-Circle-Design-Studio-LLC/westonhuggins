@@ -1,4 +1,4 @@
-<?php $pageTitle = 'Design Lab Home'; ?>
+<?php $pageTitle = 'Home - Weston Huggins'; ?>
 <?php include('component-head.php'); ?>
 
 <img class="hero" src="assets/sage.jpg">
@@ -11,15 +11,14 @@
   <div class="hero-section__text-group__item hero-section__text-group__item_3">westonhuggins.com</div>
 </div>
 
+<div class="page-content">
 
-<ul class="index-list">
-  <li class="index-li"><a class="index-link" href="games.php"><span>Games</span></a></li>
-  <li class="index-li"><a class="index-link" href="scroll-pages.html"><span>Scroll Pages</span></a></li>
-  <li class="index-li"><a class="index-link" href="canvas.html"><span>Canvas</span></a></li>
-  <li class="index-li"><a class="index-link" href="cronut.html"><span>Cronut Calendar</span></a></li>
-  <li class="index-li"><a class="index-link" href="archive.html"><span>Archive</span></a></li>
-</ul>
+  <div class="link-container">
+    <a class="link-container__item link" href="portfolio.php">PORTFOLIO</a>
+    <a class="link-container__item link" href="personal-projects.php">PERSONAL PROJECTS</a>
+  </div>
+
+</div>
 
 </body>
 </html>
-<script src="main.js"></script>

@@ -1,11 +1,15 @@
-
+<?php $pageTitle = 'Games - Weston Huggins'; ?>
 <?php include('component-head.php'); ?>
 
-<ul class="index-list">
-    <li class="index-li"><a class="index-link" href="maze.html"><span>Maze Game</span></a></li>
-    <li class="index-li"><a class="index-link" href="bubble-game.html"><span>Bubble Game</span></a></li>
-    <li class="index-li"><a class="index-link" href="frogger-like.html"><span>Frogger-Inspired Game</span></a></li>
-</ul>
+<div class="page-content page-content_no-hero">
+
+  <div class="link-container">
+    <a class="link-container__item link" href="maze.html"><span>Maze Game</span></a>
+    <a class="link-container__item link" href="bubble-game.html"><span>Bubble Game</span></a>
+    <a class="link-container__item link" href="frogger-like.html"><span>Frogger-Inspired Game</span></a>
+  </div>
+
+</div>
 
 </body>
 </html>
