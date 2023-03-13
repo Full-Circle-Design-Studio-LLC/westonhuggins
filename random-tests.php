@@ -1,4 +1,4 @@
-<?php $pageTitle = 'Random Tests - Weston Huggins'; ?>
+<?php $pageTitle = 'Other Tests - Weston Huggins'; ?>
 <?php include('component-head.php'); ?>
 
 <div class="page-content page-content_no-hero">
