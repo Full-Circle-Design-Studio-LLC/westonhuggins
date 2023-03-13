@@ -25,18 +25,25 @@ const ambientLight = new THREE.AmbientLight(0xffffff, 1);
 scene.add(ambientLight);
 
 
+
+
 loader.load( '../assets/3d/building-3d/scene.gltf', function ( gltf ) {
+
+    var pageHeight = document.body.offsetHeight - window.innerHeight;
+    const fullRotation = 6.28319;
+    console.log(pageHeight);
+
 
     // may need to change scale if asset is too small or too large
     scene.scale.set(10,10,10);
 
 	scene.add( gltf.scene );
     console.log(gltf);
-    // console.log(gltf.scene.children[0].children[0].children[0].children[0].children[0]);
 
-    document.getElementById('slider-y').addEventListener('input', function(e) {
-        // cube.rotation.y = this.value;
-        gltf.scene.children[0].children[0].children[0].children[0].children[0].rotation.y = this.value;
+    document.addEventListener('scroll', function() {
+        let scrollPositionPercent = window.scrollY/pageHeight;
+        let rotateValue = scrollPositionPercent*fullRotation;
+        gltf.scene.children[0].children[0].children[0].children[0].children[0].rotation.y = rotateValue;
     });
 
 }, undefined, function ( error ) {

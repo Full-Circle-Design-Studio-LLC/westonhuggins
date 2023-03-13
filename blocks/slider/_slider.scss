@@ -1,5 +1,7 @@
 .slider-container {
     position: sticky;
+    display: flex;
+    flex-direction: column;
     top: 150px;
     left: 45px;
     width: fit-content;

@@ -50,6 +50,13 @@ body {
   margin: 0;
 }
 
+.scroll-rotate {
+  height: 300vh;
+  canvas {
+    position: fixed;
+  }
+}
+
 /* -----------------------------------------------------------------------------index.html */
 
 .index-list {
