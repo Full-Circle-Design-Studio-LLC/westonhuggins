@@ -28,10 +28,10 @@ animate();
 
 
 
-document.getElementById('rotate-cube-button').addEventListener('click', function() {
-    cube.rotation.y += 0.1;
-})
 
-document.getElementById('rotate-cube-button-x').addEventListener('click', function() {
-    cube.rotation.x += 0.1;
-})
+document.getElementById('slider-x').addEventListener('input', function(e) {
+    cube.rotation.x = this.value;
+});
+document.getElementById('slider-y').addEventListener('input', function(e) {
+    cube.rotation.y = this.value;
+});

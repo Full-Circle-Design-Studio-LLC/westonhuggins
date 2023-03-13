@@ -6,8 +6,17 @@
 <h1>3D Tests</h1>
 <p>This page is used for testing the implementation of 3D assets on a webpage.</p>
 <br>
-<button id="rotate-cube-button">Rotate model Y</button>
-<button id="rotate-cube-button-x">Rotate model X</button>
+<div class="slider-container">
+  Rotate along x axis
+  <input type="range" min="0" max="6.28319" value="0" step="0.1" class="slider-container__slider" id="slider-x">
+</div>
+<div class="slider-container">
+  Rotate along y axis
+  <input type="range" min="0" max="6.28319" value="0" step="0.1" class="slider-container__slider" id="slider-y">
+</div>
+<br>
+<div>*next add translate</div>
+<div>*still need to figure out uploading custom assets</div>
 
 </div>
 
