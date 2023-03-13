@@ -9,26 +9,8 @@
 @use 'blocks/link/link';
 @use 'blocks/page-content/page-content';
 @use 'blocks/image-gallery/image-gallery';
+@use 'blocks/slider/slider';
 
-/*
-@keyframes slideOut {
-  from {
-    transform: rotate(0turn);
-  }
-  50% {
-    transform: rotate(.5turn);
-    font-size: 100px;
-    width: 800px;
-    margin-left: 0;
-  }
-  to {
-    font-size: 40px;
-    margin-left: 70vw;
-    transform: rotate(1turn);
-    visibility: hidden;
-  }
-}
-*/
 @keyframes fall {
   from {transform: translate(-1px, 0);}
   2.5% {transform: translate(1px, 0);}

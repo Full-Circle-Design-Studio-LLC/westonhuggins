@@ -4,6 +4,13 @@
 <div class="page-content page-content_no-hero">
 
 <h1>3D Tests</h1>
+
+<div class="link-container">
+  <a class="link-container__item link" href="3d-building.php">3D Building</a>
+</div>
+
+<br><br>
+
 <p>This page is used for testing the implementation of 3D assets on a webpage.</p>
 <br>
 <div class="slider-container">
