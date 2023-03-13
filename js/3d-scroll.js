@@ -38,7 +38,13 @@ loader.load( '../assets/3d/building-3d/scene.gltf', function ( gltf ) {
     scene.scale.set(10,10,10);
 
 	scene.add( gltf.scene );
-    console.log(gltf);
+
+    const axesHelper = new THREE.AxesHelper( 10 );
+    // Show axes
+    // gltf.scene.children[0].children[0].children[0].children[0].children[0].add( axesHelper );
+
+    // Reposition model to center on axes
+    gltf.scene.children[0].children[0].children[0].children[0].children[0].geometry.translate( -2, 0, 2 );
 
     document.addEventListener('scroll', function() {
         let scrollPositionPercent = window.scrollY/pageHeight;
