@@ -14,49 +14,100 @@ const material = new THREE.MeshBasicMaterial( { color: 0xFF3421 } );
 const cube = new THREE.Mesh( geometry, material );
 // scene.add( cube );
 
-camera.position.z = 5;
-camera.position.x = -5;
-camera.position.y = 2;
-
 const loader = new GLTFLoader();
 
 // may need ambient light so object isn't in complete darkness and thus invisible
 const ambientLight = new THREE.AmbientLight(0xffffff, 1);
 scene.add(ambientLight);
 
+camera.position.y = 2;
 
+loadModel();
 
+function loadModel() {
 
-loader.load( '../assets/3d/building-3d/scene.gltf', function ( gltf ) {
+    var modelPath = '../assets/3d/building-3d/scene.gltf';
+    var modelPath1 = '../assets/3d/CB.gltf';
+    var modelPath2 = '../assets/3d/muscular_fish/scene.gltf';
 
-    var pageHeight = document.body.offsetHeight - window.innerHeight;
-    const fullRotation = 6.28319;
-    console.log(pageHeight);
+    // const modelInfo = {
+    //     path:'../assets/3d/building-3d/scene.gltf',
+    //     translateX: -2,
+    //     translateY: 0,
+    //     translateZ: 2,
+    //     positionX: 0.5,
+    //     positionY: -0.2,
+    //     positionZ: -0.5,
+    //     scaleX: 0,
+    //     scaleY: 0,
+    //     scaleZ: 0
+    // }
+    const modelInfo1 = {
+        path:'../assets/3d/CB/WTC.gltf',
+        translateX: -2,
+        translateY: 0,
+        translateZ: 2,
+        positionX: 0,
+        positionY: 0,
+        positionZ: -0.5,
+        scaleX: -0.05,
+        scaleY: -0.05,
+        scaleZ: -0.05,
+        rotateX: 3.1,
+        rotateY: 0,
+        rotateZ: 0
+    }
 
+    const currentModel = modelInfo1;
 
-    // may need to change scale if asset is too small or too large
-    scene.scale.set(10,10,10);
+    loader.load( currentModel.path, function ( gltf ) {
 
-	scene.add( gltf.scene );
+        var pageHeight = document.body.offsetHeight - window.innerHeight;
+        const fullRotation = 6.28319;
+        console.log(model);
+    
+    
+        // may need to change scale if asset is too small or too large
+        scene.scale.set(10,10,10);
+    
+        scene.add( gltf.scene );
+    
+        // var model = gltf.scene.children[0].children[0].children[0].children[0].children[0];
+        var model = gltf.scene;
+        console.log(model);
 
-    const axesHelper = new THREE.AxesHelper( 10 );
-    // Show axes
-    // gltf.scene.children[0].children[0].children[0].children[0].children[0].add( axesHelper );
-
-    // Reposition model to center on axes
-    gltf.scene.children[0].children[0].children[0].children[0].children[0].geometry.translate( -2, 0, 2 );
-
-    document.addEventListener('scroll', function() {
-        let scrollPositionPercent = window.scrollY/pageHeight;
-        let rotateValue = scrollPositionPercent*fullRotation;
-        gltf.scene.children[0].children[0].children[0].children[0].children[0].rotation.y = rotateValue;
+        // set model position, scale, and rotation
+        model.position.set( currentModel.positionX, currentModel.positionY, currentModel.positionZ );
+        model.scale.set( currentModel.scaleX, currentModel.scaleY, currentModel.scaleZ );
+        model.rotation.set( currentModel.rotateX, currentModel.rotateY, currentModel.rotateZ );
+    
+        // Reposition model to center on axes
+        // model.geometry.translate( model.translate );
+    
+        const axesHelper = new THREE.AxesHelper( 10 );
+        // Show axes
+        // model.add( axesHelper );
+        // gltf.scene.children[0].children[0].children[0].children[0].children[0].add( axesHelper );
+    
+        document.addEventListener('scroll', function() {
+            let scrollPositionPercent = window.scrollY/pageHeight;
+            let rotateValue = scrollPositionPercent*fullRotation;
+            model.rotation.y = rotateValue;
+        });
+    
+    }, undefined, function ( error ) {
+    
+        console.error( error );
+    
+    } );
+    
+    
+    loader.load( modelPath2, function ( gltf ) {
+        scene.add(gltf.scene);
+        gltf.scene.scale.set(.03,.03,.03);
+        gltf.scene.position.x = -0.2;
     });
-
-}, undefined, function ( error ) {
-
-	console.error( error );
-
-} );
+}
 
 
 function animate() {

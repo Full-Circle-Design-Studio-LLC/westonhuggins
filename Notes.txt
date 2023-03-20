@@ -1,3 +1,7 @@
+COLORS:
+- BLUE: #565ba6
+- SALMON: #d15a5a
+
 Bubble Game Notes
 o save high score
 o add difficulties
