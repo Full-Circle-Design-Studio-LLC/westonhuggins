@@ -2560,3 +2560,350 @@ html {
   background-color: white;
   z-index: -3;
 }
+
+
+
+
+
+// SINGLE PROPERTY PAGE
+.single-property-page {
+  * {
+    font-family: Helvetica;
+  }
+}
+.didot {
+  font-family: Didot;
+}
+.property-heading {
+  letter-spacing: 3.5px;
+  font-size: 24px;
+}
+.property-nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1;
+}
+.property-nav__logo {
+  display: flex;
+  flex-direction: column;
+}
+.property-nav__logo__top-line {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.property-top-section {
+  min-height: 100vh;
+  padding-top: 100px;
+  figure {
+    margin-bottom: 60px;
+  }
+}
+.property-top-section__img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+.property-top-section__caption {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 10px 15px;
+  background-color: white;
+  width: fit-content;
+  text-align: center;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+}
+.caption-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -40px;
+  margin: auto;
+  border-bottom: 1px solid #256498;
+  width: 50px;
+}
+.property-top-section__copy {
+  display: block;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.property-stats-section {
+  background-color: #F8F8F8;
+}
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 25px 0;
+  border-bottom: 1px solid #E4E5E6;
+  font-weight: 600;
+  max-width: 300px;
+}
+.stat-box:nth-last-child(1) {
+  border-bottom: none;
+}
+.stat-box__number {
+  font-size: 54px;
+  color: #256498;
+}
+
+.property-availability-section {
+  color: white;
+  overflow-x: hidden;
+}
+.property-availability-section__img {
+  width: 100%;
+  transition: .4s;
+}
+.property-availability-section__img_floorplan {
+  position: absolute;
+  left: 15px;
+  width: calc(100% - 30px);
+  transform: translateX(100vw);
+}
+.availability-box {
+  position: relative;
+  background-color: #256498;
+  padding: 30px;
+  overflow: hidden;
+  transition: .4s;
+}
+.download-spec {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 60px);
+  height: 50px;
+  color: #256498;
+  background-color: white;
+  transition: .4s;
+  transform: translateX(100vw);
+  opacity: 0;
+  bottom: 30px;
+  left: 30px;
+}
+.download-spec_show {
+  transform: translateX(0);
+  opacity: 1;
+}
+.suite-list {
+  list-style: none;
+}
+.suite-list__suite {
+  display: grid;
+  position: relative;
+  grid-template-columns: auto 48px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  margin-top: -1px;
+  padding: 10px 0;
+  transition: .4s;
+  transform: translateY(0);
+}
+.suite-list__suite_1 {
+  transform: translateY(-70px);
+}
+.suite-list__suite_2 {
+  transform: translateY(-140px);
+}
+.suite-list__suite_3 {
+  transform: translateY(-210px);
+}
+.suite-list__suite_4 {
+  transform: translateY(-280px);
+}
+.suite-list__suite__name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.suite-list__suite__button {
+  background-color: unset;
+  border: none;
+  width: 48px;
+  height: 48px;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  
+  color: white;
+}
+.suite-list__suite__button:focus {
+  outline: none;
+}
+.suite-list__suite__specs {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  transition: .4s;
+  transform: translateX(100vw);
+  opacity: 0;
+  top: 80px;
+  li {
+    margin-top: 10px;
+  }
+}
+.suite-list__suite__specs_show {
+  transform: translateX(0);
+  opacity: 1;
+}
+.suite-list__suite_hide {
+  transform: translateX(-100vw);
+  opacity: 0;
+}
+.property-availability-section_toggle {
+  .property-availability-section__img_exterior {
+    transform: translateX(-100vw);
+  }
+  .property-availability-section__img_floorplan {
+    transform: translateX(0);
+  }
+}
+
+.property-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+}
+
+.property-location-section {
+  background-color: #F8F8F8;
+  img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+.property-location-section__stats-container {
+  display: flex;
+  gap: 10px;
+  .stat-box {
+    max-width: 33%;
+    border-bottom: none;
+  }
+  .stat-box__description {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .property-top-section {
+    figure {
+      margin-bottom: 30px;
+    }
+  }
+  .property-top-section__caption {
+    position: relative;
+    font-size: 24px;
+    background-color: unset;
+  }
+  .property-availability-section_toggle {
+    .availability-box {
+      transform: translateX(-64.5vw);
+    }
+  }
+  .availability-box {
+    padding-left: 16.6%;
+    padding-right: 16.6%;
+  }
+  .download-spec {
+    width: 66.8%;
+    left: 16.6%;
+  }
+  .property-location-section {
+    img {
+      max-height: 300px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .property-heading {
+    font-size: 32px;
+  }
+  .property-top-section__caption {
+    position: absolute;
+    background-color: white;
+    font-size: 32px;
+  }
+  .property-top-section__copy {
+    width: 741px;
+    padding: 0 15px;
+  }
+  .property-stats-section {
+    display: flex;
+    padding-left: 8.3%;
+    padding-right: 8.3%;
+  }
+  .stat-box {
+    border-bottom: none;
+    border-right: 1px solid #E4E5E6;
+    padding: 25px 28px;
+    margin: unset;
+  }
+  .stat-box:nth-last-child(1) {
+    border-right: none;
+  }
+  .property-availability-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .property-availability-section__img_exterior {
+    width: 90%;
+    margin: auto;
+  }
+  .property-availability-section__img_floorplan {
+    width: 90%;
+    grid-column: 1/2;
+    top: 3rem;
+    left: 39vw;
+    max-height: 350px;
+    object-fit: cover;
+  }
+  .availability-box {
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .property-availability-section_toggle {
+    .property-availability-section__img_exterior {
+      opacity: 0;
+      transition: 1s;
+      transform: translateX(-70vw);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .property-top-section {
+    figure {
+      margin-bottom: 40px;
+    }
+  }
+  .property-top-section__caption {
+    font-size: 40px;
+    padding: 30px 65px 0 65px;
+    bottom: -45px;
+  }
+}

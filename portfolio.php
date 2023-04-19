@@ -7,11 +7,13 @@
   <div class="link-container">
     <a class="link-container__item link" href="https://full-circle.design/" target="_blank">Full Circle Design Studio</a>
     <a class="link-container__item link" href="https://www.burnsscalorealestate.com/" target="_blank">Burns Scalo Real Estate</a>
+    <a class="link-container__item link" href="https://yuyigrows.com/" target="_blank">Yuyi Grows</a>
   </div><br><br>
 
   <h2>Mini Projects</h2>
   <div class="link-container">
     <a class="link-container__item link" href="cronut.html">Cronut Calendar</a>
+    <a class="link-container__item link" href="single-property.html">Single Property</a>
   </div>
   
 </div>

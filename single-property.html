@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<head>
+    <title>Single Property - Weston Huggins</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="single-property-page">
+
+    <nav class="property-nav">
+        <a class="property-nav__logo" href="#">
+            <span class="property-nav__logo__top-line didot">15120</span>
+            CORNELIA ST.
+        </a>
+    </nav>
+
+    <section class="property-top-section col-12 pb-5">
+        <figure class="position-relative">
+            <img class="property-top-section__img" src="assets/1.jpg">
+            <figcaption class="property-top-section__caption didot">
+                ELEVATE YOUR OFFICE
+                <br class="d-lg-none">
+                EXPERIENCE</figcaption>
+            <div class="caption-line d-md-none"></div>
+        </figure>
+        <span class="property-top-section__copy">Discover a new level of sophistication and productivity with our state-of-the-art office building, where cutting-edge design meets unparalleled amenities.</span>
+    </section>
+
+    <section class="property-stats-section text-center pt-5 pb-5">
+        <div class="stat-box">
+            <span class="stat-box__number didot">15</span>
+            <span class="stat-box__description">TOTAL SUITES</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-box__number didot">5</span>
+            <span class="stat-box__description">GROUND-FLOOR<br>RETAIL SUITES</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-box__number didot">450,000</span>
+            <span class="stat-box__description">TOTAL SQUARE<br>FEET</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-box__number didot">5,000</span>
+            <span class="stat-box__description">AVERAGE FOOT<br>TRAFFIC</span>
+        </div>
+    </section>
+
+    <section class="property-availability-section col-12 pt-5 pb-5">
+        <img class="property-availability-section__img property-availability-section__img_exterior" src="assets/5.jpg">
+        <img class="property-availability-section__img property-availability-section__img_floorplan" src="assets/6.jpg">
+        <div class="availability-box mt-3 mt-lg-0 pt-lg-5 pb-lg-5">
+            <h2 class="property-heading didot mb-lg-5">AVAILABILITY</h2>
+            <ul class="suite-list p-0 mt-3">
+                <li class="suite-list__suite">
+                    <span class="suite-list__suite__name">Suite 101</span>
+                    <span class="suite-list__suite__subtext">1st Floor / 1,045 SF</span>
+                    <button class="suite-list__suite__button p-0" onclick="availabilityToggle(this)">--></button>
+
+                    <ul class="suite-list__suite__specs">
+                        <li>Large floor-to-ceiling windows</li>
+                        <li>Private Restrooms</li>
+                        <li>Kitchen/Break Area</li>
+                        <li>Collaborative Workspaces</li>
+                        <li>Two Private Offices</li>
+                    </ul>
+                </li>
+                <li class="suite-list__suite">
+                    <span class="suite-list__suite__name">Suite 101</span>
+                    <span class="suite-list__suite__subtext">1st Floor / 1,045 SF</span>
+                    <button class="suite-list__suite__button p-0" onclick="availabilityToggle(this)">--></button>
+
+                    <ul class="suite-list__suite__specs">
+                        <li>Large floor-to-ceiling windows</li>
+                        <li>Private Restrooms</li>
+                        <li>Kitchen/Break Area</li>
+                        <li>Collaborative Workspaces</li>
+                        <li>Two Private Offices</li>
+                    </ul>
+                </li>
+                <li class="suite-list__suite">
+                    <span class="suite-list__suite__name">Suite 101</span>
+                    <span class="suite-list__suite__subtext">1st Floor / 1,045 SF</span>
+                    <button class="suite-list__suite__button p-0" onclick="availabilityToggle(this)">--></button>
+
+                    <ul class="suite-list__suite__specs">
+                        <li>Large floor-to-ceiling windows</li>
+                        <li>Private Restrooms</li>
+                        <li>Kitchen/Break Area</li>
+                        <li>Collaborative Workspaces</li>
+                        <li>Two Private Offices</li>
+                    </ul>
+                </li>
+                <li class="suite-list__suite">
+                    <span class="suite-list__suite__name">Suite 101</span>
+                    <span class="suite-list__suite__subtext">1st Floor / 1,045 SF</span>
+                    <button class="suite-list__suite__button p-0" onclick="availabilityToggle(this)">--></button>
+
+                    <ul class="suite-list__suite__specs">
+                        <li>Large floor-to-ceiling windows</li>
+                        <li>Private Restrooms</li>
+                        <li>Kitchen/Break Area</li>
+                        <li>Collaborative Workspaces</li>
+                        <li>Two Private Offices</li>
+                    </ul>
+                </li>
+                <li class="suite-list__suite">
+                    <span class="suite-list__suite__name">Suite 101</span>
+                    <span class="suite-list__suite__subtext">1st Floor / 1,045 SF</span>
+                    <button class="suite-list__suite__button p-0" onclick="availabilityToggle(this)">--></button>
+
+                    <ul class="suite-list__suite__specs">
+                        <li>Large floor-to-ceiling windows</li>
+                        <li>Private Restrooms</li>
+                        <li>Kitchen/Break Area</li>
+                        <li>Collaborative Workspaces</li>
+                        <li>Two Private Offices</li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#" class="download-spec">Download Spec Sheet</a>
+        </div>
+    </section>
+
+    <section class="property-gallery-section col-12 pb-4 d-lg-none">
+        <h2 class="property-heading didot text-center">IMAGE GALLERY</h2>
+        <div class="property-gallery">
+            <img src="assets/11.jpg">
+            <img src="assets/11.jpg">
+            <img src="assets/11.jpg">
+            <img src="assets/11.jpg">
+            <img src="assets/11.jpg">
+            <img src="assets/11.jpg">
+        </div>
+    </section>
+
+    <section class="property-location-section col-12 pt-4 pb-3 pt-lg-5 pb-lg-4">
+        <h2 class="property-heading didot text-center">VISIT</h2>
+        <img class="mt-3" src="assets/brown-rat.jpeg">
+        <span class="d-block text-center w-100 font-weight-bold mt-4">CONVENIENT LOCATION</span>
+        <div class="property-location-section__stats-container text-center">
+            <div class="stat-box">
+                <span class="stat-box__number didot">5</span>
+                <span class="stat-box__description">MILES FROM<br>JFK</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box__number didot">820</span>
+                <span class="stat-box__description">FT FROM<br>ACE LINE</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-box__number didot">2</span>
+                <span class="stat-box__description">WALKABLE BUS<br>STOPS</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="property-tour-section pt-5 pb-5">
+        <h2 class="property-heading didot text-center">REQUEST A TOUR</h2>
+    </section>
+
+
+<script src="js/single-property.js"></script>
+</body>
+</html>
