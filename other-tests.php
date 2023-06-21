@@ -9,6 +9,8 @@
     <a class="link-container__item link" href="data-storing.php">Data Storing Test</a>
     <a class="link-container__item link" href="react/react.php">React</a>
     <a class="link-container__item link" href="moving-dots.php">Moving Dots</a>
+    <a class="link-container__item link" href="dialog.html">Dialog Boxes</a>
+    <a class="link-container__item link" href="eventlistener.html">EventListener Tests</a>
   </div>
 
 </div>

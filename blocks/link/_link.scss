@@ -13,8 +13,10 @@
     padding: 15px;
     font-size: 20px;
     border: 2px solid #d15a5a;
+    letter-spacing: 1px;
 }
-.link:hover {
+.link:hover,
+.link:focus-visible {
     background-color: white;
     color: #d15a5a;
     background-color: #d15a5a;

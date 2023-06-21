@@ -10,6 +10,9 @@
 @use 'blocks/page-content/page-content';
 @use 'blocks/image-gallery/image-gallery';
 @use 'blocks/slider/slider';
+@use 'blocks/canvas/canvas';
+@use 'blocks/playlist-app/playlist-app';
+
 
 @keyframes fall {
   from {transform: translate(-1px, 0);}
@@ -2594,10 +2597,17 @@ html {
 .property-nav__logo {
   display: flex;
   flex-direction: column;
+  color: black;
+  margin-top: 5px;
+}
+.property-nav__logo:hover {
+  text-decoration: none;
+  color: #256498;
 }
 .property-nav__logo__top-line {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 39px;
+  line-height: 30px;
 }
 
 .property-top-section {
@@ -2891,6 +2901,16 @@ html {
       opacity: 0;
       transition: 1s;
       transform: translateX(-70vw);
+    }
+  }
+  .property-featured-images {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 66%;
+    gap: 25px;
+    img {
+      max-width: 25%;
     }
   }
 }
