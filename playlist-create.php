@@ -16,21 +16,24 @@
             <h1>Create Playlist</h1>
             <div class="form-field">
                 <label for="playlist-name">* Playlist Name</label>
-                <input type="text" name="playlist-name" required>
+                <input type="text" id="playlist-name" name="playlist-name" required>
             </div>
             <div class="form-field">
                 <label for="playlist-name">Playlist Description</label>
-                <input type="text" name="playlist-description">
+                <input type="text" id="playlist-description" name="playlist-description">
             </div>
             <div class="form-field">
                 <label for="playlist-image">Playlist Image</label>
-                <input name="playlist-image" type="file" accept="image/*">
+                <input id="playlist-image" name="playlist-image" type="file" accept="image/*">
             </div>
             <div class="form-field">
-                <input type="submit" value="submit">
+                <input type="submit" value="Create!" class="pl-button pl-button_red submit">
             </div>
         </form>
     </section>
+    <div class="button-container">
+        <button class="button-test">Click Here!</button>    
+    </div>
 </div>
 
 </body>

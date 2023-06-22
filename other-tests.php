@@ -11,6 +11,7 @@
     <a class="link-container__item link" href="moving-dots.php">Moving Dots</a>
     <a class="link-container__item link" href="dialog.html">Dialog Boxes</a>
     <a class="link-container__item link" href="eventlistener.html">EventListener Tests</a>
+    <a class="link-container__item link" href="rotate-visualizer.html">Rotate Visualizer</a>
   </div>
 
 </div>
