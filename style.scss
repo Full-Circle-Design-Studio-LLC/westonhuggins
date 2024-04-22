@@ -13,6 +13,7 @@
 @use 'blocks/canvas/canvas';
 @use 'blocks/playlist-app/playlist-app';
 @use 'blocks/rotate-visualizer/rotate-visualizer';
+@use 'blocks/address-app/address-app';
 
 
 @keyframes fall {
@@ -2926,5 +2927,24 @@ html {
     font-size: 40px;
     padding: 30px 65px 0 65px;
     bottom: -45px;
+  }
+}
+
+.d-inline {
+  display: inline;
+}
+
+// standard page
+.page-standard {
+  padding: 40px 15px;
+}
+@media (min-width: 768px) {
+  .page-standard {
+    padding: 40px 8%;
+  }
+}
+@media (min-width: 1024px) {
+  .page-standard {
+    padding: 40px 12%;
   }
 }

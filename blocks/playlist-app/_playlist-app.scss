@@ -38,6 +38,10 @@ $plDarkRed: #ab5154;
         width: 100%;
         font-size: 30px;
     }
+    h4 {
+        margin-top: 5px;
+        text-align: center;
+    }
     ul {
         list-style: none;
         padding: 0;
@@ -66,7 +70,7 @@ $plDarkRed: #ab5154;
         min-height: 100svh;
     }
     .top-fold {
-        height: 100svh;
+        min-height: 100svh;
     }
     .home-links {
         height: calc(100% - 85px);
@@ -134,7 +138,8 @@ $plDarkRed: #ab5154;
         input:focus-visible {
             outline: none;
         }
-        [type="text"] {
+        [type="text"],
+        [type="search"] {
             box-shadow: -2px 2px 2px 0px black;
             border: 1px solid black;
             border-radius: 3px;
@@ -143,6 +148,25 @@ $plDarkRed: #ab5154;
         [type="text"]:focus-visible {
             transform: translate(1px, -1px);
             box-shadow: -2px 2px 3px 1px #000;
+        }
+        [type="search"] {
+            height: 40px;
+            font-size: 27px;
+        }
+        [type="search"]:focus-visible {
+
+        }
+    }
+    .checkbox {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        label {
+            width: 105px;
+        }
+        input {
+            width: 25px;
+            height: 25px;
         }
     }
 
@@ -185,6 +209,57 @@ $plDarkRed: #ab5154;
         .submit {
             font-size: 20px;
             letter-spacing: 1px;
+        }
+    }
+    
+    // Search
+    .search-results {
+        flex-direction: column;
+        gap: 15px;
+        background-color: white;
+        box-shadow: -2px 2px 2px 0px black;
+        border: 1px solid black;
+        border-radius: 3px;
+        color: black;
+    }
+    .search-results__item {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 50px auto 50px;
+        column-gap: 10px;
+    }
+    .search-results__item__img,
+    .search-results__item__quick-add {
+        grid-row: 1/3;
+    }
+    .search-results__item__quick-add {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: unset;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        margin: auto;
+    }
+    .search-results__item__song {
+        grid-row: 1/2;
+        align-self: end;
+    }
+    .search-results__item__artist {
+        grid-row: 2/3;
+        font-size: 14px;
+    }
+    [data-selected="false"] {
+        .search-results__item__quick-add::after {
+            content: "+";
+        }
+    }
+    [data-selected="true"]{
+        .search-results__item__quick-add::after {
+            content: "-";
+            margin-top: -5px;
         }
     }
 }
