@@ -7,7 +7,7 @@
 
   <h2>Websites</h2>
   <div class="link-container">
-    <a class="link-container__item link" href="https://full-circle.design/" target="_blank">Full Circle Design Studio</a>
+    <a class="link-container__item link" href="https://fullcircledesign.org/" target="_blank">Full Circle Design Studio</a>
     <a class="link-container__item link" href="https://www.burnsscalorealestate.com/" target="_blank" rel="nofollow">Burns Scalo Real Estate</a>
     <a class="link-container__item link" href="https://zanehuggins.com/" target="_blank" rel="nofollow">zanehuggins.com</a>
     <a class="link-container__item link" href="https://partner-perks.burnsscalorealestate.com/" target="_blank" rel="nofollow">Partner Perks</a>
