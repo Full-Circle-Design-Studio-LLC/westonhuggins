@@ -5,6 +5,9 @@
 
   <h1>Portfolio - Weston Huggins</h1>
 
+  <h2>Favorite Projects</h2>
+
+
   <h2>Websites</h2>
   <div class="link-container">
     <a class="link-container__item link" href="https://fullcircledesign.org/" target="_blank">Full Circle Design Studio</a>

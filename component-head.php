@@ -16,10 +16,11 @@
 
     <title><?php if (isset($pageTitle)) {echo $pageTitle;} else {echo 'Weston Huggins';} ?></title>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
 <nav class="nav">
-    <a class="nav__item" href="index.php">Home</a>
+    <a class="nav__item" href="/index.php">Home</a>
+    <a class="nav__item" href="/portfolio.php">Portfolio</a>
 </nav>
