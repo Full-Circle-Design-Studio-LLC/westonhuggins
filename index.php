@@ -5,7 +5,7 @@
 
     <section>
         <h1>Weston Huggins</h1>
-        <p>Hi, my name is Weston and I'm a full stack WordPress developer with more than three years of experience. My specialties are custom WordPress theme and plugin development.</p>
+        <p>Hi, my name is Weston and I'm a full stack WordPress developer with more than three years of experience. My specialties are in custom WordPress theme and plugin development.</p>
         <p>I currently live in Arlington, Texas where I work as a web developer for <a href="https://www.leadersinstitute.com/" target="_blank">The Leaders Institute</a> and own a web design agency called <a href="https://fullcircledesign.org/" target="_blank">Full Circle Design Studio</a>.</p>
       </section>
       <section>
