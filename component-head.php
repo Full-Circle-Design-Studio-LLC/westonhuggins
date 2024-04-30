@@ -13,12 +13,15 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <?php if ( isset($noindex) ) : ?>
+        <meta name="robots" content="noindex">
+    <?php endif; ?>
 
     <title><?php if (isset($pageTitle)) {echo $pageTitle;} else {echo 'Weston Huggins';} ?></title>
     
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body class="<?php if ( isset($bodyClass) ) {echo $bodyClass;} ?>">
 
 <nav class="nav">
     <a class="nav__item" href="/index.php">Home</a>
