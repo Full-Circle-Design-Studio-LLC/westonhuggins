@@ -9,6 +9,9 @@
     section {
         padding: 25px 15px;
     }
+    label {
+        font-size: 18px;
+    }
 }
 .subsection {
     border-radius: 10px;
@@ -111,6 +114,20 @@
     margin: auto;
     max-width: 450px;
 }
+.date-gallery {
+    display: grid;
+    figure {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    figcaption {
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
 
 .theme-romance {
     background-image: url("./assets/date/hearts-pattern.jpeg");
@@ -163,6 +180,19 @@
 }
 
 
+@media (min-width: 768px) {
+    .page-date {
+        section {
+            padding: 25px;
+        }
+    }
+    .date-gallery {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+    }
+}
+
+
 
 @media (min-width: 992px) {
     .page-date {
@@ -171,5 +201,8 @@
             margin: auto;
             padding: 50px 0;
         }
+    }
+    .date-gallery {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

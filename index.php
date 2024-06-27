@@ -157,9 +157,23 @@
       <script src="https://www.goodreads.com/review/custom_widget/159380140.Weston's%20bookshelf:%20read?cover_position=left&cover_size=medium&num_books=5&order=d&shelf=read&show_author=1&show_cover=1&show_rating=1&show_review=1&show_tags=1&show_title=1&sort=date_read&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=1&widget_id=1714157210&widget_text_color=000000&widget_title_size=medium&widget_width=medium" type="text/javascript" charset="utf-8"></script>
             </div>
     </section>
-    <section class="d-none">
-      <h2>Contact</h2>
-      <p>Please contact me through my agency <a href=""></a>.</p>
+    <section>
+      <form id="home-contact" action="home_email.php" method="post">
+        <h2>Contact</h2>
+        <label for="name">
+          Name
+          <input type="text" name="name" id="name">
+        </label>
+        <label for="email">
+          Email
+          <input type="email" name="email" id="email" required>
+        </label>
+        <label for="message">
+          Message
+          <textarea name="message" id="message" required></textarea>
+        </label>
+        <input type="submit" value="Submit">
+      </form>
     </section>
 
 </div>
