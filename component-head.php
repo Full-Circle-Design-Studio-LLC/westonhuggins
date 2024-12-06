@@ -9,16 +9,6 @@
     })(window,document,'script','dataLayer','GTM-KZT9R54K');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ENYYVD4H7E"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-ENYYVD4H7E');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <?php if ( isset($noindex) ) : ?>
