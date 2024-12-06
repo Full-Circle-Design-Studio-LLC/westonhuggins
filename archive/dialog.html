@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<head>
+    <title>Dialog Boxes - Weston Huggins</title>
+    <link rel="stylesheet" href="css/dialog.css">
+</head>
+<body>
+
+    <h1>Dialog Box Tutorial</h1>
+    
+    <button id="dialog-toggle">Open Dialog Box</button>
+
+    <dialog id="dialog-box">
+        <p>This is a test dialog box!</p>
+        <form method="dialog">
+            <button>Close</button>
+        </form>
+    </dialog>
+
+    <script>
+        const dialog = document.getElementById('dialog-box');
+        document.getElementById('dialog-toggle').addEventListener('click', function() {
+            dialog.showModal();
+        });
+    </script>
+</body>
+</html>

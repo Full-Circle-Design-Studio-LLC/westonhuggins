@@ -1,0 +1,68 @@
+COLORS:
+- BLUE: #565ba6
+- SALMON: #d15a5a
+
+Bubble Game Notes
+o save high score
+o add difficulties
+
+Canvas:
+o add toolbar:
+	x color picker will be one icon with dropdown
+	o custom color selector
+	x eraser (just changes bg color to lightgray)
+	x toggle canvas box borders
+	o clear all
+
+Scroll animation:
+o make animation that progresses as you scroll
+
+Proof navbar:
+o why does nav menu flash on page load?
+o x button currently bottom-heavy needs fixed
+o if we have time:
+	o fine tune navbar close
+o change color of search icon on click
+	
+Future:
+o restaurant ordering (coffee):
+	o client sets selection boxes as either "can choose multiple" (eg toppings) or "can choose one" (eg size)
+	o maybe have separate section for pizzas and for things like extra sauces and sides
+	o quantity option
+	o offer this to a pizza restaurant for free?
+		o include service fee?
+		o could learn a lot for future restaurant ordering
+		o maybe could provide one of two options:
+			o fee per transaction (either flat fee or percentage of sale)
+			o OR charge monthly fee
+	o option for making selections unavailable
+	
+	o steps:
+		o find how to handle submitted php
+			o where do the submitted fields go? Should it be stored somewhere? Maybe the receipt is emailed to business owner or stored somewhere for them as record
+			
+		o do we generate receipts and receive payments, or does a third party/plugin do that for us?
+		o 
+
+Future: copy starbucks page load smoothness:
+	o only part of page changes on click of some things; so, header and sidebar remain while other part of page reloads/changes
+
+Future: image view practice:
+o image gallery w left/right arrows to navigate
+
+Future: top-down shooter:
+o grid-based, can only move up-down-left-right
+o press space or other key to shoot
+o can shoot enemies to destroy them (stationary or moving?)
+o powerups?
+
+Future: shape creator:
+o user enters specs in input fields such as height, width, border radius, etc.
+o can select certain preset things such as shape (square, circle, etc.)
+o when all is input, hit enter to generate shape
+
+Future: dodging game:
+o desc: 5 tracks (rows) and character sits at left; items to avoid slide from right to left and you dodge them by using arrow keys to move up and down tracks
+o can have good items that give bonus points or maybe effects like temporarily slowing down movement of bad items
+o no time limit; instead, make it progressively harder over time
+	o this could be done by making bad item speed/frequency increase ever so slightly after each one is deployed. That way, js is not relying on time intervals to increase difficulty or end game
